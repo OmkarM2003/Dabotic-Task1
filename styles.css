@@ -1,0 +1,503 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #f2f2f2;
+    /* Set text color to light gray */
+    background-color: #333;
+    /* Set background color to dark gray */
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Header Styles */
+header {
+    background-color: #111;
+    /* Darken the header background */
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.main-nav {
+    margin-top: 10px;
+}
+
+.main-nav ul {
+    list-style-type: none;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.main-nav a {
+    font-size: 18px;
+}
+
+/* Blog Post Styles */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.blog-post {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #444;
+    /* Set background color for blog post */
+}
+
+.post-image {
+    width: 40%;
+    overflow: hidden;
+}
+
+.post-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.post-image img:hover {
+    transform: scale(1.1);
+}
+
+.post-content {
+    width: 60%;
+    padding: 20px;
+}
+
+.post-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #111;
+    /* Darken the footer background */
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-container p {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    /* ... (previous media query styles) ... */
+}
+
+/* Dark Theme Styles */
+.dark-theme {
+    color: #f2f2f2;
+    background-color: #333;
+}
+
+.dark-theme a {
+    color: #007BFF;
+}
+
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .header-container {
+        padding: 0 20px;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .main-nav.open {
+        display: block;
+    }
+
+    .main-nav ul {
+        text-align: center;
+    }
+
+    .main-nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .post-content {
+        flex: 1;
+    }
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+@keyframes live-writing {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.intro-line {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#line1 {
+    animation: live-writing 4s steps(60, end) both;
+    /* Adjust the animation duration as needed */
+}
+
+#line2 {
+    animation: live-writing 4s steps(60, end) both;
+    /* Adjust the animation duration as needed */
+    animation-delay: 4s;
+    /* Delay the start of the second line animation */
+}
+
+/* Media Query for Mobile Menu */
+@media screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .main-nav.open {
+        display: block;
+    }
+}
+
+#home {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    border-radius: 10px;
+}
+
+.home-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.intro-box {
+    flex: 1;
+    padding: 120px 50px;
+    /* Adjust the padding to maintain height and width */
+    width: 100%;
+    /* Increase the width to allow the blue box to expand */
+    border-radius: 20px;
+    /* Add rounded corners with a radius of 20px */
+}
+
+.intro-box h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #121111;
+    color: #090909;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #ebecee;
+    color: #1b1919;
+}
+
+.intro-image {
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+
+}
+
+.intro-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+/* Add this CSS to your existing styles.css or create a new one */
+
+.about-me-content {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+
+}
+
+.about-me-left {
+    flex: 1;
+    padding: 150px;
+    background-color: #6C757D;
+    animation: slideInLeft 2s ease;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.about-me-right {
+    flex: 1;
+    padding: 150px;
+    background-color: #6C757D;
+    animation: slideInRight 2s ease;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.about-me-left h2 {
+    margin-bottom: 10px;
+}
+
+.about-me-details {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
+.about-me-detail-item {
+    padding: 0px 0;
+}
+
+
+
+
+
+/* Add your preferred styling here */
+#contact {
+    text-align: center;
+    padding: 50px;
+}
+
+.contact-content {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+label {
+    font-weight: bold;
+    width: 120px;
+    /* Adjust label width as needed */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    flex: 1;
+    width: 100%;
+    /* Set input field width to 100% */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Add your preferred styling here */
+.project-content {
+    padding: 90px 0;
+    color: #fff;
+}
+
+.project-title {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.project-title h4 {
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 40px;
+    color: #fed700;
+    margin-bottom: 20px;
+}
+
+.project-title p {
+    color: #e5e5e5;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project {
+    /* padding: 30px 15px; */
+    color: #e5e5e5;
+    border: 2px solid #e5e5e5;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    padding: 25px;
+    text-align: center;
+    flex-basis: 28%;
+    transition: 0.3s;
+    opacity: 0;
+    /* Set initial opacity to 0 */
+    transition: opacity 1s ease;
+}
+
+.project i {
+    background-color: #fed700;
+    width: 60px;
+    height: 60px;
+    color: #333;
+    font-size: 26px;
+    line-height: 60px;
+    border-radius: 50%;
+}
+
+.project h4 {
+    font-size: 26px;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+
+.project p {
+    text-align: justify;
+}
+
+.project:hover {
+    border-color: #fed700;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.project.animation-active {
+    opacity: 1;
+    transform: translateY(0);
+}
